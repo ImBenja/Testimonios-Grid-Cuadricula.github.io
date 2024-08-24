@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /*COLORES*/
+
+  /*****PRIMARIOS*****/
+
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+
+  /*****NEUTRALES*****/
+
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Barlow Semi Condensed";
+  background-color: var(--Light-grayish-blue);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 30px;
+  gap: 30px;
+}
+
+.Daniel {
+  background: var(--Moderate-violet);
+  padding: 30px;
+  border-radius: 10px;
+  background-image: url("https://assets.codepen.io/11868974/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 81.5% 5%;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.perfil .daniel-foto {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: 3px solid hsl(264, 69%, 73%);
+}
+
+.perfil .nombre {
+  opacity: 110%;
+  color: var(--White);
+}
+.perfil .verificacion {
+  opacity: 50%;
+  color: var(--White);
+  font-size: 14px;
+  margin-top: 0.2rem;
+}
+
+.title-card {
+  color: var(--White);
+  font-weight: 600;
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  word-spacing: 2px;
+}
+.subtitle-card {
+  color: var(--White);
+  opacity: 80%;
+  font-size: 16px;
+  margin-top: 1.2rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.Jon {
+  background-color: var(--Very-dark-grayish-blue);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.perfil .jon-foto {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: silver 3px solid;
+}
+
+.Kira {
+  background-color: var(--White);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.perfil .kira-foto {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.perfil .nombre-2 {
+  color: var(--Very-dark-grayish-blue);
+  opacity: 110%;
+  font-weight: 500;
+}
+.perfil .verificacion-2 {
+  opacity: 50%;
+  color: rgb(41, 40, 40);
+  font-size: 13px;
+}
+
+.title-card-black {
+  color: var(--Very-dark-grayish-blue);
+  font-weight: 600;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+.subtitle-card-black {
+  color: hsl(217, 19%, 35%);
+  font-size: 16px;
+  opacity: 80%;
+  line-height: 1.4;
+  margin-top: 1.5rem;
+}
+
+.Jean {
+  background-color: var(--White);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.perfil .jean-foto {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.Pat {
+  background-color: var(--Very-dark-blackish-blue);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.perfil .pat-foto {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: 3px solid rgb(97, 50, 154);
+}
+
+@media (min-width: 1024px) {
+  main {
+    width: 1315px;
+    margin: 0 auto 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 320px 305px auto;
+    column-gap: 30px;
+    row-gap: 25px;
+  }
+
+  .Daniel {
+    background-image: url("https://assets.codepen.io/11868974/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 81.5% 5%;
+    grid-column: 1 / 3;
+  }
+
+  .perfil .daniel-foto {
+    width: 50px;
+    height: 50px;
+  }
+
+  .title-card {
+    word-spacing: normal;
+    font-size: 1.3rem;
+  }
+  .subtitle-card {
+    line-height: 1.4;
+    font-size: 14px;
+  }
+
+  .perfil .jon-foto {
+    width: 50px;
+    height: 50px;
+  }
+
+  .Kira {
+    grid-column: 4 / 5;
+    grid-row: 3 / 1;
+  }
+
+  .perfil .kira-foto {
+    width: 50px;
+    height: 50px;
+  }
+
+  .title-card-black {
+    font-size: 1.3rem;
+  }
+  .subtitle-card-black {
+    margin-top: 2rem;
+    font-size: 15px;
+  }
+
+  .perfil .jean-foto {
+    width: 50px;
+    height: 50px;
+  }
+
+  .Pat {
+    grid-column: 2 / 4;
+  }
+
+  .perfil .pat-foto {
+    width: 50px;
+    height: 50px;
+  }
+}
